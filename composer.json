@@ -1,0 +1,14 @@
+{
+	"name": "madebymutual/Country-Detect",
+	"description": "Returns a country code to your Craft templates. Requires CloudFlare.",
+	"type": "craft-plugin",
+	"authors": [
+		{
+			"name": "Mutual",
+			"homepage": "https://madebymutual.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
