@@ -17,7 +17,12 @@ class CountryDetectVariable
 {
     public function country()
     {
-	    $country = $_SERVER["HTTP_CF_IPCOUNTRY"];
-        return $country;
+			if(array_key_exists("HTTP_CF_IPCOUNTRY", $_SERVER)){
+				$country = $_SERVER["HTTP_CF_IPCOUNTRY"];
+					return $country;
+			}
+			else {
+				return "";
+			}
     }
 }
